@@ -81,7 +81,7 @@ const postSchema = z.object({
   title: z.string().min(5, 'Title must be at least 5 characters').max(100),
   description: z.string().min(20, 'Description must be at least 20 characters').max(2000),
   category: z.enum(CATEGORIES as unknown as [string, ...string[]]),
-  budget: z.coerce.number().min(0, 'Budget must be a positive number'),
+  budget: z.number().min(0, 'Budget must be a positive number'),
   city: z.string().max(100).optional().or(z.literal('')),
   country: z.string().max(100).optional().or(z.literal('')),
   remote: z.boolean().optional(),
@@ -1010,7 +1010,7 @@ export default function SeekerDashboard() {
                     {/* Budget */}
                     <div className="space-y-1.5">
                       <Label htmlFor="budget">Budget (USD)</Label>
-                      <Input id="budget" type="number" min={0} placeholder="500" {...register('budget')} disabled={submitting} />
+                      <Input id="budget" type="number" min={0} placeholder="500" {...register('budget', { valueAsNumber: true })} disabled={submitting} />
                       {errors.budget && <p className="text-xs text-red-500">{errors.budget.message}</p>}
                     </div>
 
