@@ -50,8 +50,11 @@ export default function LoginPage() {
 
       // Determine dashboard based on role
       const dashboardUrl = result.user.role === 'SEEKER' ? '/dashboard/seeker' : '/dashboard/provider';
-      router.push(dashboardUrl);
-      router.refresh();
+      console.log('Login successful, redirecting to:', dashboardUrl);
+      console.log('User role:', result.user.role);
+      
+      // Use window.location for more reliable redirect
+      window.location.href = dashboardUrl;
 
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Login failed');
