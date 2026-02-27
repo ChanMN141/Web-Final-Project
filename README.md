@@ -95,3 +95,17 @@ Ensure you have the following installed on your machine:
   - `jobs/`: Public job board.
 - `models/`: Mongoose database schemas.
 - `docs/`: System specifications and non-technical feature guides.
+
+##Screenshots of Skill Bridge
+
+<img width="1401" height="753" alt="Screenshot 2026-02-27 213130" src="https://github.com/user-attachments/assets/1156b287-538e-4d40-b401-e76cc1d580c7" />
+Provider HomePage
+<img width="1399" height="753" alt="Screenshot 2026-02-27 213142" src="https://github.com/user-attachments/assets/38727d9e-3adc-455c-b69d-8499ee7ad2de" />
+<img width="1392" height="754" alt="Screenshot 2026-02-27 213154" src="https://github.com/user-attachments/assets/3b3c31f2-d5a0-4042-941f-9f270da46682" />
+<img width="1412" height="760" alt="Screenshot 2026-02-27 213220" src="https://github.com/user-attachments/assets/d62de07d-6a6c-4fc0-a8ac-bd5a9fbfd572" />
+<img width="1410" height="772" alt="Screenshot 2026-02-27 213231" src="https://github.com/user-attachments/assets/a8810e68-b96a-4301-ad2e-c32b75509047" />
+
+
+
+
+
